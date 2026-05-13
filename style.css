@@ -1,0 +1,536 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: Arial, sans-serif;
+     background: #FFF7ED;
+     color: #1f2f49;
+     padding-top: 92px;
+     overflow-x: hidden;
+ }
+
+ img {
+     max-width: 100%;
+     display: block;
+ }
+
+ a,
+ button,
+ input,
+ textarea,
+ select {
+     font: inherit;
+ }
+
+ .container {
+     width: min(100% - 32px, 1200px);
+     margin: 0 auto;
+ }
+
+
+ .header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background: #7C2D12;
+     backdrop-filter: blur(12px);
+     border-bottom: 1px solid #d9e3f2;  
+     z-index: 1000;
+     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+ }
+
+
+ .header-inner {
+     min-height: 92px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 20px;
+ }
+
+
+ .brand {
+     display: flex;
+     align-items: center;
+     gap: 14px;
+     text-decoration: none;
+     color: #1f2f49;
+     min-width: 0;
+ }
+
+ .logo img{
+     width: 65px;
+     height: 65px;
+     object-fit: cover;
+     flex: 0 0 56px;
+     border-radius: 16px;
+     background: #d07104;
+     color: #ffffff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 700;
+     font-size: 18px;
+     box-shadow: 0 10px 18px rgba(47, 90, 168, 0.18);
+ }
+
+ .brand-text {
+     display: flex;
+     flex-direction: column;
+     gap: 2px;
+     min-width: 0;
+ }
+
+ .brand-text strong {
+     font-size: 16px;
+     color: #fcfcfd;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .brand-text span {
+     font-size: 13px;
+     color: #5a6b85;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .nav {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     flex-wrap: wrap;
+ }
+
+ .nav a {
+     text-decoration: none;
+     color: #fefeff;
+     padding: 10px 16px;
+     font-size: 14px;
+     font-weight: 600;
+     border-radius: 999px;
+     transition: 0.3s ease;
+ }
+
+ .nav a:hover,
+ .nav a:focus-visible {
+     background: #e8f1ff;
+     color: #7d3420;
+     outline: none;
+ }
+
+ .menu-checkbox {
+     display: none;
+ }
+
+ .menu-toggle {
+     display: none;
+     width: 48px;
+     height: 48px;
+     border: 1px solid #d9e3f2;
+     border-radius: 14px;
+     background: #ffffff;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+ }
+
+
+
+
+ .menu-toggle span,
+ .menu-toggle::before,
+ .menu-toggle::after {
+     content: "";
+     display: block;
+     width: 20px;
+     height: 2px;
+     background: #24324a;
+     border-radius: 999px;
+     transition: 0.3s ease;
+     position: relative;
+ }
+
+ .menu-toggle::before {
+     position: absolute;
+     transform: translateY(-6px);
+ }
+
+ .menu-toggle::after {
+     position: absolute;
+     transform: translateY(6px);
+ }
+
+ .menu-checkbox:checked~.menu-toggle span {
+     opacity: 0;
+ }
+
+ .menu-checkbox:checked~.menu-toggle::before {
+     transform: rotate(45deg);
+ }
+
+ .menu-checkbox:checked~.menu-toggle::after {
+     transform: rotate(-45deg);
+ }
+    .doudou img{ 
+        height: 400px;
+        width: 100%;
+    }
+    
+    .text{
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        color: white;
+    }
+    .ll{
+        left: 10%;
+        color: #D97706;
+        font-size: 20px;
+        margin-top: 30px;
+        
+    }
+    .vv{
+        margin-top: 30px;
+        font-size: 40px;
+        font-family: serif;
+        
+    }
+    .ras{
+        margin-top: 30px;
+    }
+    .bout{
+        display: flex;
+        
+        gap: 10px;
+        margin-top: 30px;
+        
+    }
+    .bout1{
+        background: #d07104;
+        color: black;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        text-decoration: none; 
+    }
+   
+    .bout2{
+        text-decoration: none;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #d07104 ;
+
+    }
+
+ .lyfo {
+     display: flex;
+     justify-content: space-around;
+     gap: 15px;
+     width: 90%;
+     margin: 20px auto;
+ }
+
+ .lyfo1 {
+     height: 200px;
+     width: 45%;
+     border-radius: 10px;
+     background-color: rgb(252, 252, 242);
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+ }
+
+ .lyfo1 img {
+     height: 130px;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 10px;
+
+ }
+ .lyfo1 p{
+    padding: 7px;
+    color: black;
+ }
+ .lyfo1 h3{
+    padding: 10px;
+    color: #D97706;
+ }
+ .momo{
+    font-family: serif;
+    font-size: 30px;
+    color: #D97706;
+ }
+
+ .presentation {
+
+     background-color: #FFF7ED;
+     padding: 60px 20px;
+
+ }
+
+ .presentation-container {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 40px;
+     max-width: 1100px;
+     margin: auto;
+     flex-wrap: wrap;
+
+ }
+
+ .presentation-image img {
+
+     width: 100%;
+     max-width: 450px;
+     border-radius: 15px;
+     
+
+ }
+
+ .presentation-text {
+
+     max-width: 500px;
+
+ }
+
+ .presentation-text h4 {
+    color: #D97706;
+     margin-bottom: 10px;
+font-size: 14px;
+
+ }
+
+ .presentation-text h2 {
+     color: #7C2D12;
+     margin-bottom: 15px;
+
+ }
+
+ .presentation-text p {
+     color: #1C1917;
+     margin-bottom: 20px;
+     line-height: 1.6;
+
+ }
+
+ .btn {
+     background-color: #D97706;
+     color: white;
+     padding: 12px 20px;
+     border-radius: 8px;
+     text-decoration: none;
+     display: inline-block;
+
+ }
+
+
+ .btn:hover {
+     background-color: #7c3212;
+
+ }
+ .yuu{
+    background-color: #7C2D12;
+    color: white;
+    padding: 40px 20px;
+    width: 100%;
+    
+ }
+ .yuu1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+    gap: 30px;
+ }
+ .yuu-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+ }
+ .yuu-box h3{
+    color: #FBBF24;
+    margin-bottom: 10px;
+    font-family: serif;
+ }
+ .yuu-box p{
+    margin: 5px 0;
+    font-size: 14px;
+ }
+ .you{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+
+ }
+@media (max-width: 1024px) {
+  .lyfo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .lyfo1{
+    width: 100%;
+    height: auto;
+  }
+  .text{
+    top: 20%;
+    left: 6%;
+  }
+
+  .vv{
+    font-size: 55px;
+  }
+}
+@media (max-width: 1023px) {
+
+  .header-inner{
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  .nav{
+    justify-content: center;
+  }
+  .text{
+    top: 18%;
+    left: 5%;
+    width: 90%;
+  }
+  .vv{
+    font-size: 35px;
+  }
+  .ras p{
+    font-size: 15px;
+  }
+
+  .bout{
+    flex-wrap: wrap;
+  }
+
+  .presentation-container{
+    flex-direction: column;
+    text-align: center;
+  }
+  .presentation-text{
+    max-width: 100%;
+  }
+  .lyfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 95%;
+  }
+  .lyfo1{
+    width: 100%;
+    height: auto;
+  }
+  .yuu1{
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+@media (max-width: 768px) {
+
+  body{
+    padding-top: 130px;
+  }
+
+  .header-inner{
+    gap: 10px;
+  }
+
+  .nav{
+    gap: 5px;
+  }
+
+  .nav a{
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .doudou img{
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .text{
+    top: 22%;
+    left: 5%;
+    width: 90%;
+  }
+
+  .ll{
+    font-size: 15px;
+  }
+
+  .vv{
+    font-size: 28px;
+  }
+
+  .ras p{
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .bout{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bout1,
+  .bout2{
+    width: fit-content;
+  }
+
+  .presentation{
+    padding: 40px 15px;
+  }
+
+  .presentation-image img{
+    max-width: 100%;
+  }
+
+  .momo{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .lyfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .lyfo1{
+    width: 100%;
+    height: auto;
+  }
+
+  .lyfo1 img{
+    height: 220px;
+  }
+
+  .yuu1{
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+}
